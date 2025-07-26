@@ -1,0 +1,10 @@
+city,artist,venue,weekend,pop,month,score,genre,minprice
+Detroit,Sam Hunt,Ford Field,0,688701,10,76,Country,39.75
+Minneapolis,Sam Hunt,Target Field,1,400070,7,76,Country,24.75
+Denver,Sam Hunt,Sports Authority Field At Mile High,1,649495,8,76,Country,29.75
+Alpharetta,Niall Horan,Verizon Amphitheatre,0,62298,9,78,Rock,47
+Hartford,Sam Hunt,XFINITY Theatre,0,125017,6,76,Country,20
+Foxborough,Ed Sheeran,Gillette Stadium,1,???,9,94,Pop,39.5
+Raleigh,G-Eazy,Coastal Credit Union Music Park at Walnut Creek,0,431746,9,88,Hip-Hop/Rap,29.5
+Maryland Heights,G-Eazy,"Hollywood Casino Amphitheatre - St. Louis, MO",1,???,8,88,Hip-Hop/Rap,29.5
+Bristow,G-Eazy,Jiffy Lube Live,0,???,8,88,Hip-Hop/Rap,29.5

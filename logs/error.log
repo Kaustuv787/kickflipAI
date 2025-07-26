@@ -1,0 +1,314 @@
+2024-12-24 20:51:12,825 -app.logger - ERROR - Object of type function is not JSON serializable
+Traceback (most recent call last):
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/main.py", line 55, in answer_question
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/resources/chat/completions.py", line 298, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/_base_client.py", line 1263, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/_base_client.py", line 955, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/_base_client.py", line 981, in _request
+    request = self._build_request(options, retries_taken=retries_taken)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/_base_client.py", line 504, in _build_request
+    return self._client.build_request(  # pyright: ignore[reportUnknownMemberType]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/httpx/_client.py", line 378, in build_request
+    return Request(
+           ^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/httpx/_models.py", line 408, in __init__
+    headers, stream = encode_request(
+                      ^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/httpx/_content.py", line 216, in encode_request
+    return encode_json(json)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/httpx/_content.py", line 177, in encode_json
+    body = json_dumps(
+           ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type function is not JSON serializable
+
+2024-12-24 20:51:25,867 -app.logger - ERROR - Object of type function is not JSON serializable
+Traceback (most recent call last):
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/main.py", line 55, in answer_question
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/resources/chat/completions.py", line 298, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/_base_client.py", line 1263, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/_base_client.py", line 955, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/_base_client.py", line 981, in _request
+    request = self._build_request(options, retries_taken=retries_taken)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/_base_client.py", line 504, in _build_request
+    return self._client.build_request(  # pyright: ignore[reportUnknownMemberType]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/httpx/_client.py", line 378, in build_request
+    return Request(
+           ^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/httpx/_models.py", line 408, in __init__
+    headers, stream = encode_request(
+                      ^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/httpx/_content.py", line 216, in encode_request
+    return encode_json(json)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/httpx/_content.py", line 177, in encode_json
+    body = json_dumps(
+           ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type function is not JSON serializable
+
+2024-12-24 20:51:26,297 -app.logger - ERROR - Object of type function is not JSON serializable
+Traceback (most recent call last):
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/main.py", line 55, in answer_question
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/resources/chat/completions.py", line 298, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/_base_client.py", line 1263, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/_base_client.py", line 955, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/_base_client.py", line 981, in _request
+    request = self._build_request(options, retries_taken=retries_taken)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/_base_client.py", line 504, in _build_request
+    return self._client.build_request(  # pyright: ignore[reportUnknownMemberType]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/httpx/_client.py", line 378, in build_request
+    return Request(
+           ^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/httpx/_models.py", line 408, in __init__
+    headers, stream = encode_request(
+                      ^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/httpx/_content.py", line 216, in encode_request
+    return encode_json(json)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/httpx/_content.py", line 177, in encode_json
+    body = json_dumps(
+           ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type function is not JSON serializable
+
+2024-12-24 20:51:52,438 -app.logger - ERROR - Object of type function is not JSON serializable
+Traceback (most recent call last):
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/main.py", line 55, in answer_question
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/resources/chat/completions.py", line 298, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/_base_client.py", line 1263, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/_base_client.py", line 955, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/_base_client.py", line 981, in _request
+    request = self._build_request(options, retries_taken=retries_taken)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/_base_client.py", line 504, in _build_request
+    return self._client.build_request(  # pyright: ignore[reportUnknownMemberType]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/httpx/_client.py", line 378, in build_request
+    return Request(
+           ^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/httpx/_models.py", line 408, in __init__
+    headers, stream = encode_request(
+                      ^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/httpx/_content.py", line 216, in encode_request
+    return encode_json(json)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/httpx/_content.py", line 177, in encode_json
+    body = json_dumps(
+           ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type function is not JSON serializable
+
+2024-12-24 20:51:52,880 -app.logger - ERROR - Object of type function is not JSON serializable
+Traceback (most recent call last):
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/main.py", line 55, in answer_question
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/resources/chat/completions.py", line 298, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/_base_client.py", line 1263, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/_base_client.py", line 955, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/_base_client.py", line 981, in _request
+    request = self._build_request(options, retries_taken=retries_taken)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/groq/_base_client.py", line 504, in _build_request
+    return self._client.build_request(  # pyright: ignore[reportUnknownMemberType]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/httpx/_client.py", line 378, in build_request
+    return Request(
+           ^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/httpx/_models.py", line 408, in __init__
+    headers, stream = encode_request(
+                      ^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/httpx/_content.py", line 216, in encode_request
+    return encode_json(json)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/sandiptakumarnayak/Downloads/python_project_rag/.venv/lib/python3.12/site-packages/httpx/_content.py", line 177, in encode_json
+    body = json_dumps(
+           ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type function is not JSON serializable
+
+2024-12-25 01:27:31,103 -app.logger - ERROR - Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "/Users/swastiknayak/Desktop/work/python_project_rag/main.py", line 55, in answer_question
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/swastiknayak/Desktop/work/python_project_rag/venv/lib/python3.12/site-packages/groq/resources/chat/completions.py", line 298, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/swastiknayak/Desktop/work/python_project_rag/venv/lib/python3.12/site-packages/groq/_base_client.py", line 1263, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/swastiknayak/Desktop/work/python_project_rag/venv/lib/python3.12/site-packages/groq/_base_client.py", line 955, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/swastiknayak/Desktop/work/python_project_rag/venv/lib/python3.12/site-packages/groq/_base_client.py", line 1058, in _request
+    raise self._make_status_error_from_response(err.response) from None
+groq.AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+
+2024-12-25 01:29:14,487 -app.logger - ERROR - Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "/Users/swastiknayak/Desktop/work/python_project_rag/main.py", line 55, in answer_question
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/swastiknayak/Desktop/work/python_project_rag/venv/lib/python3.12/site-packages/groq/resources/chat/completions.py", line 298, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/swastiknayak/Desktop/work/python_project_rag/venv/lib/python3.12/site-packages/groq/_base_client.py", line 1263, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/swastiknayak/Desktop/work/python_project_rag/venv/lib/python3.12/site-packages/groq/_base_client.py", line 955, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/swastiknayak/Desktop/work/python_project_rag/venv/lib/python3.12/site-packages/groq/_base_client.py", line 1058, in _request
+    raise self._make_status_error_from_response(err.response) from None
+groq.AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+
+2024-12-25 01:30:51,747 -app.logger - ERROR - Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "/Users/swastiknayak/Desktop/work/python_project_rag/main.py", line 55, in answer_question
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/swastiknayak/Desktop/work/python_project_rag/venv/lib/python3.12/site-packages/groq/resources/chat/completions.py", line 298, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/swastiknayak/Desktop/work/python_project_rag/venv/lib/python3.12/site-packages/groq/_base_client.py", line 1263, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/swastiknayak/Desktop/work/python_project_rag/venv/lib/python3.12/site-packages/groq/_base_client.py", line 955, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/swastiknayak/Desktop/work/python_project_rag/venv/lib/python3.12/site-packages/groq/_base_client.py", line 1058, in _request
+    raise self._make_status_error_from_response(err.response) from None
+groq.AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+
+2025-02-27 00:34:32,862 -app.logger - ERROR - Completions.create() got an unexpected keyword argument 'max_completion_tokens'
+Traceback (most recent call last):
+  File "/Users/swastiknayak/Desktop/work/python_project_rag/main.py", line 56, in answer_question
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Completions.create() got an unexpected keyword argument 'max_completion_tokens'
+
+2025-02-27 00:36:03,453 -app.logger - ERROR - Completions.create() got an unexpected keyword argument 'max_completion_tokens'
+Traceback (most recent call last):
+  File "/Users/swastiknayak/Desktop/work/python_project_rag/main.py", line 56, in answer_question
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Completions.create() got an unexpected keyword argument 'max_completion_tokens'
+
+2025-02-27 00:38:41,054 -app.logger - ERROR - Completions.create() got an unexpected keyword argument 'max_completion_tokens'
+Traceback (most recent call last):
+  File "/Users/swastiknayak/Desktop/work/python_project_rag/main.py", line 56, in answer_question
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Completions.create() got an unexpected keyword argument 'max_completion_tokens'
+
+2025-02-27 00:41:29,241 -app.logger - ERROR - Completions.create() got an unexpected keyword argument 'max_completion_tokens'
+Traceback (most recent call last):
+  File "/Users/swastiknayak/Desktop/work/python_project_rag/main.py", line 56, in answer_question
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Completions.create() got an unexpected keyword argument 'max_completion_tokens'
+
+2025-02-27 00:43:20,105 -app.logger - ERROR - Completions.create() got an unexpected keyword argument 'max_completion_tokens'
+Traceback (most recent call last):
+  File "/Users/swastiknayak/Desktop/work/python_project_rag/main.py", line 56, in answer_question
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Completions.create() got an unexpected keyword argument 'max_completion_tokens'
+
